@@ -1,0 +1,307 @@
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  min-width: 140px;
+  min-height: 320px;
+}
+
+header {
+  display: block;
+  /*background-color: #2CD17F;*/
+  /*background-color:  #1E304C;*/
+  /*background-color: #695F5B;*/
+  /*background-color: #C5CFD7;*/
+  /*background-color:#89bdd3;*/
+  background-color:#22A39F;
+  padding: 0px;
+  width: 100%;
+  height: 250px;
+}
+
+header h1 {
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 5px;
+  font-family: 'Helvetica';
+  font-size: 2.8em;
+}
+
+header h2 {
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.nav {
+  z-index: 100;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+}
+
+
+/* Remove margins and padding from the list, and add a black background color */
+
+ul.topnav {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* Float the list items side by side */
+
+ul.topnav li {
+  display: inline-block;
+}
+
+
+/* Style the links inside the list items */
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+
+/* Change background color of links on hover */
+
+ul.topnav li a:hover {
+  background-color: #555;
+}
+
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+
+ul.topnav li.icon {
+  display: none;
+}
+
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+
+@media screen and (max-width:690px) {
+  ul.topnav li:not(: first-child) {
+    display: none;
+  }
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+
+@media screen and (max-width:690px) {
+  ul.topnav.responsive {
+    position: relative;
+  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+#about p {
+  font-size:20px;
+  color:#333333;
+  /*text-align:justify;*/
+}
+
+
+.bar {
+  width: 25%;
+  margin: auto;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.profile-pic {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin-right: 0px;
+}
+
+.description {
+  max-width: 600px;
+  margin-left: 0px;
+}
+
+.box-description {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  max-width: 800px;
+  margin: auto;
+ 
+}
+
+@media screen and (max-width: 640px) {
+  .box {
+    flex-direction: column;
+  }
+}
+
+.element {
+  margin: auto;
+}
+
+h3 {
+  text-align: center;
+  font-size: 30px;
+  color:#333333;
+}
+
+#about{
+  background-color:white;
+}
+
+#competences{
+  /*background-color:#e3e3e3;*/
+}
+
+#contact{
+  background-color:white;
+  background-color:#e3e3e3
+}
+
+.row {
+  padding-top:100px;
+  padding-bottom:100px;
+}
+
+.site-examples {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.site-examples img {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.contact-me{
+  display:block;
+  text-align:center;
+  margin-top:50px;
+}
+
+ul.social {
+  list-style: none;
+}
+
+ul.social li {
+  display: inline;
+  padding: 0;
+  margin: 0 5px;
+}
+
+ul.social li a {
+  display: inline-block;
+  margi: 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  position: relative;
+  background-color: #D3D3D3;
+}
+
+ul.social li a i {
+  color: #FFF;
+  text-align: center;
+  margin: 0;
+  line-height: 50px;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+ul.social li a:hover i {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social li a.face:hover {
+  background-color: #3B5998;
+}
+
+.social li a.twit:hover {
+  background-color: #33ccff;
+}
+
+.social li a.linkedin:hover {
+  background-color: #007bb7;
+}
+
+/* skills */
+
+.skill_container {
+  padding: 10px 50px;
+  text-align: center;
+}
+
+.chart {
+  position: relative;
+  display: inline-block;
+  margin: 20px 10px;
+  color: #999;
+  font-size: 14px;
+  text-align: center;
+}
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Badges */
+
+.code-badge.yellow-badge .outer {
+  background-color: #EBB21B;
+}
